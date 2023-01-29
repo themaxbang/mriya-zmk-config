@@ -14,6 +14,6 @@
 ---
 include:
   - board: nrfmicro_13
-    shield: corne_left
+    shield: crkbd_left
   - board: nrfmicro_13
-    shield: corne_right
+    shield: crkbd_right
