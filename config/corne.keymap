@@ -154,7 +154,7 @@
             //                       	| _____	| _____	| _____	|     	| _____	| _____	| _____	|
 
             bindings = <
-    &bootloader         &none         	&none       	&none         	&none         	&none         	 &kp C_UNDO      &kp C_REDO      &none         	&none         	&kp C_BRI_UP    &kp C_SLEEP
+    &bootloader         &none         	&none       	&none         	&none         	&none         	 &kp K_UNDO      &kp K_REDO      &none         	&none         	&kp C_BRI_UP    &kp C_SLEEP
     &bt BT_CLR  	&bt BT_SEL 0 	&bt BT_SEL 1  	&bt BT_SEL 2  	&bt BT_SEL 3  	&bt BT_SEL 4  	 &bt BT_SEL 4  	 &bt BT_SEL 3  	 &bt BT_SEL 2  	&bt BT_SEL 1  	&bt BT_SEL 0    &bt BT_CLR
     &ext_power EP_OFF   &kp KP_NUM      &kp CAPS        &kp SLCK        &kp INS        	&kp PAUSE_BREAK  &cprght         &plsmns         &degree        &none         	&kp C_BRI_DN  	&ext_power EP_OFF
 							&trans         	&none        	&trans        	 &trans          &none        	 &trans
