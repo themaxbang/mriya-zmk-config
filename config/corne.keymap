@@ -106,6 +106,104 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
                 <&macro_release>,
                 <&kp LALT>;
         };
+	euro: euro {
+            label = "ZM_plsmns";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>,
+                <&macro_release>,
+                <&kp LALT>;
+	};
+	numcomma: numcomma {
+            label = "ZM_plsmns";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N0>,
+                <&macro_release>,
+                <&kp LALT>;
+	};
+	lguillement: lguillement {
+            label = "ZM_plsmns";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N1>,
+                <&macro_release>,
+                <&kp LALT>;
+	};
+	rguillement: rguillement {
+            label = "ZM_plsmns";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N7>,
+                <&macro_release>,
+                <&kp LALT>;
+	};
+	lbracket: lbracket {
+            label = "ZM_plsmns";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N1 &kp KP_N2 &kp KP_N3>,
+                <&macro_release>,
+                <&kp LALT>;
+	};
+	rbracket: rbracket {
+            label = "ZM_plsmns";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N1 &kp KP_N2 &kp KP_N5>,
+                <&macro_release>,
+                <&kp LALT>;
+	};
+	colon: colon {
+            label = "ZM_plsmns";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N5 &kp KP_N8>,
+                <&macro_release>,
+                <&kp LALT>;
+	};
     };
 };
 
@@ -142,10 +240,10 @@ label= "BASE"                                                  ;
 					   └─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┘ */ 
 bindings = <
 	
-	&kp ESC    	&kp Q   &mt LWIN W   &kp E     &kp R       &kp T            &kp Y  	&kp U       &kp I           &kp O      &kp P      &kp LBKT     
-	&mt LCTRL RBKT  &kp A   &kp S        &kp D     &kp F       &kp G            &kp H       &kp J       &kp K           &kp L      &kp SEMI   &mt RCTRL SQT
-	&mt LALT BSLH   &kp Z   &kp X        &kp C     &kp V       &kp B            &kp N       &kp M       &kp COMMA       &kp DOT    &kp FSLH   &mt RALT MINUS
-						       &lt 2 TAB   &mt LSHFT SPACE  &lt 1 RET   &lt 1 RET   &mt RSHFT BSPC  &lt 2 DEL
+&kp ESC    	 &kp Q   &mt LWIN W   &kp E       &kp R             &kp T       &kp Y  	    &kp U            &kp I       &kp O     &kp P      &kp LBKT     
+&mt LCTRL RBKT   &kp A   &kp S        &kp D       &kp F             &kp G       &kp H       &kp J            &kp K       &kp L     &kp SEMI   &mt RCTRL SQT
+&mt LALT BSLH    &kp Z   &kp X        &kp C       &kp V             &kp B       &kp N       &kp M            &kp COMMA   &kp DOT   &kp FSLH   &mt RALT MINUS
+				      &lt 2 TAB   &mt LSHFT SPACE   &lt 1 RET   &lt 1 RET   &mt RSHFT BSPC   &lt 2 DEL
             >;
         };
 		
@@ -159,18 +257,18 @@ label= "LOWER"                                                 ;
 /* ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐
    │   CAPS  │   F1    │   F2 	 │   F3    │   F4    │    ~    │                    │    !    │    @    │    #    │    $    │    %    │   RGUI	│
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │   CTRL  │   F5    │   F6    │   F7    │   F8    │   MENU  │                    │    ^    │    &    │    *    │    (    │    )    │   CTRL  │
+   │   CTRL  │   F5    │   F6    │   F7    │   F8    │  MENU   │                    │    ^    │    &    │    *    │    (    │    )    │   CTRL  │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤		    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │   LALT  │   F9    │   F10   │   F11   │   F12   │   LANG  │		    │    ₽    │    ±    │    °    │    {    │    }    │   RALT  │
+   │   LALT  │   F9    │   F10   │   F11   │   F12   │  LANG   │		    │    «    │    »    │    :    │    {    │    }    │   RALT  │
    └─────────┴─────────┴─────────┴─────────┼─────────┼─────────┼─────────┐┌─────────┼─────────┼─────────┼─────────┴─────────┴─────────┴─────────┘
 					   │  ADJUST │  LSHFT  │  	 ││ 	    │  RSHFT  │  ADJUST │   
 					   └─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┘ */ 
 bindings = <
 
-    &kp CAPS   	&kp F1   &kp F2     &kp F3  	&kp F4      &kp GRAVE       &kp EXCL   	&kp AT      &kp HASH    &kp DOLLAR    &kp PERCENT   &kp RGUI
-    &kp LCTRL   &kp F5   &kp F6     &kp F7      &kp F8      &kp K_CMENU     &kp CARET   &kp AMPS    &kp STAR    &kp LPAR      &kp RPAR      &kp RCTRL
-    &kp LALT    &kp F9   &kp F10    &kp F11     &kp F12     &kp LG(SPACE)   &kp RA(N8) 	&plsmns     &degree     &kp LBRC      &kp RBRC      &kp RALT
-						&lt 3 TAB   &kp LSHFT       &trans      &trans      &kp RSHFT   &lt 3 DEL
+&kp CAPS    &kp F1   &kp F2    &kp F3  	 &kp F4      &kp GRAVE       &kp EXCL       &kp AT         &kp HASH    &kp DOLLAR   &kp PERCENT   &kp RGUI
+&kp LCTRL   &kp F5   &kp F6    &kp F7    &kp F8      &kp K_CMENU     &kp CARET      &kp AMPS       &kp STAR    &kp LPAR     &kp RPAR      &kp RCTRL
+&kp LALT    &kp F9   &kp F10   &kp F11   &kp F12     &kp LG(SPACE)   &lguillement   &rguillement   &colon      &lbracket    &rbracket     &kp RALT
+					 &lt 3 TAB   &kp LSHFT       &trans         &trans         &kp RSHFT   &lt 3 DEL
             >;
         };
 		
@@ -183,18 +281,18 @@ label= "RAISE"                                                 ;
 /* ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐
    │   BKSP  │    *    │    9 	 │    8    │    7    │    +    │                    │   NEXT  │   HOME  │  PSCRN  │   PGUP  │   VOLU  │   RGUI	│
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │    ,    │    /    │    3    │    2    │    1    │    -    │                    │   PLAY  │   LEFT  │   UP    │   RGHT  │   VOLD  │   CTRL  │
+   │    .    │    /    │    3    │    2    │    1    │    -    │                    │   PLAY  │   LEFT  │   UP    │   RGHT  │   VOLD  │   CTRL  │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤		    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │    =    │    .    │    6    │    5    │    4    │    0    │		    │   PREV  │   END   │   DOWN  │   PGDN  │   MUTE  │   RALT  │
+   │    =    │    ,    │    6    │    5    │    4    │    0    │		    │   PREV  │   END   │   DOWN  │   PGDN  │   MUTE  │   RALT  │
    └─────────┴─────────┴─────────┴─────────┼─────────┼─────────┼─────────┐┌─────────┼─────────┼─────────┼─────────┴─────────┴─────────┴─────────┘
-					   │  	     │  NUMLK  │  ADJUST ││  ADJUST │  RSHFT  │  	│   
+					   │  	     │         │  ADJUST ││  ADJUST │  RSHFT  │  	│   
 					   └─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┘ */ 
 bindings = <
 
-    &kp BSPC  	    &kp KP_MULTIPLY   &kp KP_N9    &kp KP_N8 	&kp KP_N7    &kp PLUS     &kp C_NEXT    &kp HOME      &kp PSCRN    &kp PG_UP    &kp C_VOL_UP    &kp RIGHT_GUI
-    &kp KP_COMMA    &kp KP_SLASH      &kp KP_N3    &kp KP_N2    &kp KP_N1    &kp MINUS    &kp C_PLAY    &kp LEFT      &kp UP       &kp RIGHT    &kp C_VOL_DN    &kp RCTRL 
-    &kp EQUAL  	    &numdot 	      &kp KP_N6    &kp KP_N5    &kp KP_N4    &kp KP_N0    &kp C_PREV    &kp END       &kp DOWN     &kp PG_DN    &kp C_MUTE      &kp RALT
-								&trans       &kp KP_NUM   &lt 3 RET  	&lt 3 RET     &kp RSHFT    &trans
+&kp BSPC    &kp KP_MULTIPLY   &kp KP_N9   &kp KP_N8   &kp KP_N7   &kp PLUS    &kp C_NEXT   &kp HOME    &kp PSCRN   &kp PG_UP   &kp C_VOL_UP   &kp RIGHT_GUI
+&numdot     &kp KP_SLASH      &kp KP_N3   &kp KP_N2   &kp KP_N1   &kp MINUS   &kp C_PLAY   &kp LEFT    &kp UP      &kp RIGHT   &kp C_VOL_DN   &kp RCTRL 
+&kp EQUAL   &numcomma 	      &kp KP_N6   &kp KP_N5   &kp KP_N4   &kp KP_N0   &kp C_PREV   &kp END     &kp DOWN    &kp PG_DN   &kp C_MUTE     &kp RALT
+					              &trans      &none       &lt 3 RET    &lt 3 RET   &kp RSHFT   &trans
             >;
         };
 
@@ -206,20 +304,20 @@ bindings = <
 label= "ADJUST"                                                ;
 // └───────────────────────────────────────────────────────────┘
 /* ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐
-   │   BLDR  │         │    	 │         │         │         │                    │ BT NEXT │    	│  	  │   	    │   BRUP  │  SLEEP	│
+   │   BLDR  │         │    	 │         │ BT PREV │ BT NEXT │                    │    ₽    │    €    │    ±	  │    °    │    >    │  BRUP	│
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │  BTCLR  │   BT0   │   BT1   │   BT2   │   BT3   │   BT4   │                    │         │         │         │         │         │  BTCLR  │
+   │  BTCLR  │   BT0   │   BT1   │   BT2   │   BT3   │   BT4   │                    │         │         │         │         │         │         │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤		    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │  pwrOFF │  NUMLK  │  CAPS   │  SLCK   │   INS   │  PAUSE  │		    │ BT PREV │         │         │         │   BRDN  │  pwrOFF │
+   │  pwrOFF │  NUMLK  │  CAPS   │  SLCK   │   INS   │  PAUSE  │		    │         │         │         │         │         │  BRDN   │
    └─────────┴─────────┴─────────┴─────────┼─────────┼─────────┼─────────┐┌─────────┼─────────┼─────────┼─────────┴─────────┴─────────┴─────────┘
 					   │  	     │         │  	 ││  	    │  	 ©    │  	│   
 					   └─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┘ */ 
 bindings = <
 
-    &bootloader         &none         	&none       	&none         	&none         	&none         	    &bt BT_NXT     &none     &none    &none   &kp C_BRI_UP    &kp C_SLEEP
-    &bt BT_CLR  	&bt BT_SEL 0 	&bt BT_SEL 1  	&bt BT_SEL 2  	&bt BT_SEL 3  	&bt BT_SEL 4  	    &none          &none     &none    &none   &none           &bt BT_CLR
-    &ext_power EP_OFF   &kp KP_NUM      &kp CAPS        &kp SLCK        &kp INS        	&kp PAUSE_BREAK     &bt BT_PRV     &none     &none    &none   &kp C_BRI_DN    &ext_power EP_OFF
-							&trans         	&none        	&trans        	    &trans         &cprght   &trans
+&bootloader         &none          &none       	  &none          &bt BT_PRV     &bt BT_NXT        &kp RA(N8)   &euro     &plsmns   &degree   &grtsgn   &kp C_BRI_UP
+&bt BT_CLR  	    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4  	  &none        &none     &none     &none     &none     &bt BT_CLR
+&ext_power EP_OFF   &kp KP_NUM     &kp CAPS       &kp SLCK       &kp INS        &kp PAUSE_BREAK   &none        &none     &none     &none     &none     &kp C_BRI_DN
+						  &trans         &none        	&trans        	  &trans       &cprght   &trans
             >;
         };
     };
