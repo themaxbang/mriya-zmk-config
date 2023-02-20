@@ -100,11 +100,11 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N7>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
         };
 	euro: euro {
             label = "ZM_plsmns";
@@ -114,11 +114,11 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 	};
 	numcomma: numcomma {
             label = "ZM_plsmns";
@@ -128,11 +128,11 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N0>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 	};
 	lguillement: lguillement {
             label = "ZM_plsmns";
@@ -142,11 +142,11 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N1>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 	};
 	rguillement: rguillement {
             label = "ZM_plsmns";
@@ -156,11 +156,11 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N7>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 	};
 	lbracket: lbracket {
             label = "ZM_plsmns";
@@ -170,11 +170,11 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N1 &kp KP_N2 &kp KP_N3>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 	};
 	rbracket: rbracket {
             label = "ZM_plsmns";
@@ -184,11 +184,11 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N1 &kp KP_N2 &kp KP_N5>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 	};
 	colon: colon {
             label = "ZM_plsmns";
@@ -198,11 +198,11 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N5 &kp KP_N8>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 	};
     };
 };
