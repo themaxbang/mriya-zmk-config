@@ -107,7 +107,7 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
                 <&kp RALT>;
         };
 	euro: euro {
-            label = "ZM_plsmns";
+            label = "ZM_euro";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
@@ -121,7 +121,7 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
                 <&kp RALT>;
 	};
 	numcomma: numcomma {
-            label = "ZM_plsmns";
+            label = "ZM_numcomma";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
@@ -135,7 +135,7 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
                 <&kp RALT>;
 	};
 	lguillement: lguillement {
-            label = "ZM_plsmns";
+            label = "ZM_lguillement";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
@@ -149,7 +149,7 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
                 <&kp RALT>;
 	};
 	rguillement: rguillement {
-            label = "ZM_plsmns";
+            label = "ZM_rguillement";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
@@ -163,7 +163,7 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
                 <&kp RALT>;
 	};
 	lbracket: lbracket {
-            label = "ZM_plsmns";
+            label = "ZM_lbracket";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
@@ -177,7 +177,7 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
                 <&kp RALT>;
 	};
 	rbracket: rbracket {
-            label = "ZM_plsmns";
+            label = "ZM_rbracket";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
@@ -191,7 +191,7 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
                 <&kp RALT>;
 	};
 	colon: colon {
-            label = "ZM_plsmns";
+            label = "ZM_colon";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
