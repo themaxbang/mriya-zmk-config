@@ -130,7 +130,7 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
                 <&macro_press>,
                 <&kp LALT>,
                 <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N0>,
+                <&kp KP_N4 &kp KP_N4>,
                 <&macro_release>,
                 <&kp LALT>;
 	};
