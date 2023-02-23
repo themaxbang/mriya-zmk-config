@@ -14,6 +14,6 @@
 ---
 include:
   - board: nrfmicro_13
-    shield: corne_left
+    shield: corne_left nice_view_adapter nice_view
   - board: nrfmicro_13
-    shield: corne_right
+    shield: corne_right nice_view_adapter nice_view
