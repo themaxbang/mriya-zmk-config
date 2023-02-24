@@ -204,6 +204,34 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
                 <&macro_release>,
                 <&kp LALT>;
 	};
+	semicolon: semicolon {
+            label = "ZM_colon";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N5 &kp KP_N9>,
+                <&macro_release>,
+                <&kp LALT>;
+	};
+	question: question {
+            label = "ZM_colon";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N6 &kp KP_N3>,
+                <&macro_release>,
+                <&kp LALT>;
+	};
     };
 };
 
@@ -300,13 +328,13 @@ label= "LOWER"                                              ;
 │         │         │         ├─────────┤         │    ~    │                         │    !    │         ├─────────┤         │         │         │
 │  CAPS   │   F1    ├─────────┤         ├─────────┤         │                         │         ├─────────┤         ├─────────┤    %    │   RGUI  │
 │  	  │         │         │   F7    │         ├─────────┤                         ├─────────┤         │    *    │         │         │         │
-├─────────┼─────────┤   F6    │         │   F8    │         │                         │         │    &    │         │    (    ├─────────┼─────────┤
-│         │         │         ├─────────┤         │   MENU  │                         │    ^    │         ├─────────┤         │         │         │
-│  CTRL   │   F5    ├─────────┤         ├─────────┤         │                         │         ├─────────┤         ├─────────┤    )    │   CTRL  │
-│         │         │         │   F11   │         ├─────────┤                         ├─────────┤         │    :    │         │         │         │
+├─────────┼─────────┤   F6    │         │   F8    │         │                         │         │    ?    │         │    (    ├─────────┼─────────┤
+│         │         │         ├─────────┤         │   MENU  │                         │    :    │         ├─────────┤         │         │         │
+│  CTRL   │   F5    ├─────────┤         ├─────────┤         │                         │         ├─────────┤         ├─────────┤    )    │    &    │
+│         │         │         │   F11   │         ├─────────┤                         ├─────────┤         │    ;    │         │         │         │
 ├─────────┼─────────┤   F10   │         │   F12   │         │                         │         │    »    │         │    {    ├─────────┼─────────┤
 │         │         │         ├─────────┤         │   LANG  │                         │    «    │         ├─────────┤         │         │         │
-│  LALT   │   F9    ├─────────┘         ├─────────┤         │                         │         ├─────────┤         └─────────┤    }    │   RALT  │
+│  LALT   │   F9    ├─────────┘         ├─────────┤         │                         │         ├─────────┤         └─────────┤    }    │    ^    │
 │         │         │                   │         ├─────────┤                         ├─────────┤         │                   │         │         │
 └─────────┴─────────┘                   │  ADJUST │         ├┬┬┬┬┬┬┬┬┬┬┬┐ ┌┬┬┬┬┬┬┬┬┬┬┬┤	        │ ADJUST  │                   └─────────┴─────────┘ 
                                         │         │  LSHFT  ├┼┼┼┼┴┴┴┼┼┼┼┤ ├┼┼┼┼┴┴┴┼┼┼┼┤  RSHFT  │         │
@@ -317,8 +345,8 @@ label= "LOWER"                                              ;
 bindings = <
 
 &kp CAPS    &kp F1   &kp F2    &kp F3  	 &kp F4      &kp GRAVE         &kp EXCL       &kp AT         &kp HASH         &kp DOLLAR   &kp PERCENT   &kp RGUI
-&kp LCTRL   &kp F5   &kp F6    &kp F7    &kp F8      &kp K_CMENU       &kp CARET      &kp AMPS       &kp STAR         &kp LPAR     &kp RPAR      &kp RCTRL
-&kp LALT    &kp F9   &kp F10   &kp F11   &kp F12     &kp LG(SPACE)     &lguillement   &rguillement   &colon           &lbracket    &rbracket     &kp RALT
+&kp LCTRL   &kp F5   &kp F6    &kp F7    &kp F8      &kp K_CMENU       &colon         &question      &kp STAR         &kp LPAR     &kp RPAR      &kp AMPS
+&kp LALT    &kp F9   &kp F10   &kp F11   &kp F12     &kp LG(SPACE)     &lguillement   &rguillement   &semicolon       &lbracket    &rbracket     &kp CARET
 					 &lt 3 TAB   &mt LSHFT SPACE   &trans         &trans         &mt RSHFT BSPC   &lt 3 DEL
             >;
         };
