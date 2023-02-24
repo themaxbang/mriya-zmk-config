@@ -205,7 +205,7 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
                 <&kp LALT>;
 	};
 	semicolon: semicolon {
-            label = "ZM_colon";
+            label = "ZM_semicolon";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
@@ -219,7 +219,7 @@ _____/\\\////////__        __/\\\///////\\\___        _\/\\\_____/\\\//__       
                 <&kp LALT>;
 	};
 	question: question {
-            label = "ZM_colon";
+            label = "ZM_question";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
