@@ -1,3 +1,4 @@
 # ZMK CRKBD WL LITE
+![crkbd-wl-lite-layout](https://user-images.githubusercontent.com/92160671/221165103-6b723830-e159-4437-a5c6-8fd2ceac4701.png)
 
-![crkbd-wl-lite-layout](https://user-images.githubusercontent.com/92160671/221163220-1b38f4c8-e347-4fb4-a14b-e8e0097db78d.png)
+
