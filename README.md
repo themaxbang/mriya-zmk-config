@@ -1,4 +1,4 @@
-# ZMK MRIYA
+# MRIYA ZMK CONFIG
 
 
 
