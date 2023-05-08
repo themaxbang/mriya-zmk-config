@@ -1,5 +1,15 @@
 # MRIYA ZMK CONFIG
 
-work in progress..
+Based on [Watchman layouts](https://github.com/aroum/Watchman-layouts)
 
-![keyboard-layout](https://user-images.githubusercontent.com/92160671/234647162-bfd1df93-e56f-4a47-8fef-0e351655ade6.jpg)
+## BASE Layer
+![mriya-base-layer]()
+
+## LOWER Layer
+![mriya-lower-layer]()
+
+## RAISE Layer
+![mriya-raise-layer]()
+
+## ADJUST Layer
+![mriya-adjust-layer]()
