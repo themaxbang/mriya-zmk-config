@@ -248,14 +248,9 @@ o8o        o888o  o888o  o888o  o888o      o888o  o88o     o8888o
                 key-positions = <18 30>;
                 bindings = <&kp ESC>;
         };
-            combo_dot {
-                timeout-ms = <50>;
-                key-positions = <19 20>;
-                bindings = <&numdot>;
-        };
             combo_comma {
                 timeout-ms = <50>;
-                key-positions = <15 16>;
+                key-positions = <16 17>;
                 bindings = <&numcomma>;
         };
             combo_colon {
