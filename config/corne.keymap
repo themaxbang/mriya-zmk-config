@@ -33,7 +33,6 @@ o8o        o888o  o888o  o888o  o888o      o888o  o88o     o8888o
 &mt {
     quick_tap_ms = <220>;
 };
-
 / {
     macros {
         numdot: numdot {
