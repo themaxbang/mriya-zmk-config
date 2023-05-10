@@ -119,7 +119,7 @@ o8o        o888o  o888o  o888o  o888o      o888o  o88o     o8888o
                 <&kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>,
                 <&macro_release>,
                 <&kp LALT>;
-	};
+	    };
 	numcomma: numcomma {
             label = "ZM_numcomma";
             compatible = "zmk,behavior-macro";
@@ -133,7 +133,7 @@ o8o        o888o  o888o  o888o  o888o      o888o  o88o     o8888o
                 <&kp KP_N4 &kp KP_N4>,
                 <&macro_release>,
                 <&kp LALT>;
-	};
+	    };
 	lguillement: lguillement {
             label = "ZM_lguillement";
             compatible = "zmk,behavior-macro";
@@ -147,7 +147,7 @@ o8o        o888o  o888o  o888o  o888o      o888o  o88o     o8888o
                 <&kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N1>,
                 <&macro_release>,
                 <&kp LALT>;
-	};
+	    };
 	rguillement: rguillement {
             label = "ZM_rguillement";
             compatible = "zmk,behavior-macro";
@@ -161,7 +161,7 @@ o8o        o888o  o888o  o888o  o888o      o888o  o88o     o8888o
                 <&kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N7>,
                 <&macro_release>,
                 <&kp LALT>;
-	};
+	    };
 	lbracket: lbracket {
             label = "ZM_lbracket";
             compatible = "zmk,behavior-macro";
@@ -175,7 +175,7 @@ o8o        o888o  o888o  o888o  o888o      o888o  o88o     o8888o
                 <&kp KP_N1 &kp KP_N2 &kp KP_N3>,
                 <&macro_release>,
                 <&kp LALT>;
-	};
+	    };
 	rbracket: rbracket {
             label = "ZM_rbracket";
             compatible = "zmk,behavior-macro";
@@ -189,7 +189,7 @@ o8o        o888o  o888o  o888o  o888o      o888o  o88o     o8888o
                 <&kp KP_N1 &kp KP_N2 &kp KP_N5>,
                 <&macro_release>,
                 <&kp LALT>;
-	};
+	    };
 	colon: colon {
             label = "ZM_colon";
             compatible = "zmk,behavior-macro";
@@ -203,7 +203,7 @@ o8o        o888o  o888o  o888o  o888o      o888o  o88o     o8888o
                 <&kp KP_N5 &kp KP_N8>,
                 <&macro_release>,
                 <&kp LALT>;
-	};
+	    };
 	semicolon: semicolon {
             label = "ZM_semicolon";
             compatible = "zmk,behavior-macro";
@@ -217,7 +217,7 @@ o8o        o888o  o888o  o888o  o888o      o888o  o88o     o8888o
                 <&kp KP_N5 &kp KP_N9>,
                 <&macro_release>,
                 <&kp LALT>;
-	};
+	    };
 	question: question {
             label = "ZM_question";
             compatible = "zmk,behavior-macro";
@@ -231,7 +231,7 @@ o8o        o888o  o888o  o888o  o888o      o888o  o88o     o8888o
                 <&kp KP_N6 &kp KP_N3>,
                 <&macro_release>,
                 <&kp LALT>;
-	};
+	    };
     };
 };
 
