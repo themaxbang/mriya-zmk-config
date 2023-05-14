@@ -358,20 +358,20 @@ label= "ADJUST"                                 ;
 // └────────────────────────────────────────────┘
 /*
 ┌───────┬───────┬───────┬───────┬───────┬───────┐                   ┌───────┬───────┬───────┬───────┬───────┬───────┐
-│ BLDR  │       │       │       │BT PREV│BT NEXT│                   │   ₽   │   €   │   ±   │   °   │   >   │  BRUP │
+│ BLDR  │       │       │       │BT PREV│BT NEXT│                   │   ₽   │   €   │   ±   │   °   │  WWW  │  BRUP │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
-│ BTCLR │  BT0  │  BT1  │  BT2  │  BT3  │  BT4  │                   │       │       │       │       │       │       │
+│ BTCLR │  BT0  │  BT1  │  BT2  │  BT3  │  BT4  │                   │       │       │       │       │  CALC │ BTCLR │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│ pwrOFF│ NUMLK │ CAPS  │ SLCK  │  INS  │ PAUSE │                   │       │       │       │       │       │  BRDN │
+│ pwrOFF│ NUMLK │ CAPS  │ SLCK  │  INS  │ PAUSE │                   │       │       │       │       │ EMAIL │  BRDN │
 └───────┴───────┴───────┴───────┼───────┼───────┼───────┐   ┌───────┼───────┼───────┼───────┴───────┴───────┴───────┘
                                 │   ▲   │       │   ▼   │   │   ▼   │   ©   │   ▲   │
                                 └───────┴───────┴───────┘   └───────┴───────┴───────┘
 */
 bindings = <
 
-&bootloader         &none          &none       	  &none          &bt BT_PRV     &bt BT_NXT        &kp RA(N8)   &euro     &plsmns   &degree   &grtsgn   &kp C_BRI_UP
-&bt BT_CLR  	    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4  	  &none        &none     &none     &none     &none     &bt BT_CLR
-&ext_power EP_OFF   &kp KP_NUM     &kp CAPS       &kp SLCK       &kp INS        &kp PAUSE_BREAK   &none        &none     &none     &none     &none     &kp C_BRI_DN
+&bootloader         &none          &none       	  &none          &bt BT_PRV     &bt BT_NXT        &kp RA(N8)   &euro     &plsmns   &degree   &kp K_WWW      &kp C_BRI_UP
+&bt BT_CLR  	    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4  	  &none        &none     &none     &none     &kp C_AL_CALC  &bt BT_CLR
+&ext_power EP_OFF   &kp KP_NUM     &kp CAPS       &kp SLCK       &kp INS        &kp PAUSE_BREAK   &none        &none     &none     &none     &kp C_AL_EMAIL &kp C_BRI_DN
 						                          &trans         &none        	&trans        	  &trans       &cprght   &trans
             >;
         };
