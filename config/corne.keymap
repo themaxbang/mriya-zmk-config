@@ -364,7 +364,7 @@ label= "ADJUST"                                 ;
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤
 │ pwrOFF│ NUMLK │ CAPS  │ SLCK  │  INS  │ PAUSE │                   │  WWW  │  CALC │ EMAIL │       │       │ pwrOFF│
 └───────┴───────┴───────┴───────┼───────┼───────┼───────┐   ┌───────┼───────┼───────┼───────┴───────┴───────┴───────┘
-                                │   ▲   │ RESET │   ▼   │   │   ▼   │ RESET │   ▲   │
+                                │   ▲   │       │   ▼   │   │   ▼   │       │   ▲   │
                                 └───────┴───────┴───────┘   └───────┴───────┴───────┘
 */
 bindings = <
@@ -372,7 +372,7 @@ bindings = <
 &bootloader         &none          &none       	  &none          &bt BT_PRV     &bt BT_NXT        &kp RA(N8)    &euro           &none           &none           &none           &bootloader
 &bt BT_CLR  	    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4  	  &bt BT_SEL 4  &bt BT_SEL 3    &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0    &bt BT_CLR
 &ext_power EP_OFF   &kp KP_NUM     &kp CAPS       &kp SLCK       &kp INS        &kp PAUSE_BREAK   &kp C_AL_WWW  &kp C_AL_CALC   &kp C_AL_EMAIL  &none           &none           &ext_power EP_OFF
-						                          &trans         &sys_reset     &trans        	  &trans        &sys_reset      &trans
+						                          &trans         &none          &trans        	  &trans        &none           &trans
             >;
         };
     };
