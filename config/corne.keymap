@@ -1,14 +1,4 @@
 /*
-ooo        ooooo  ooooooooo.    ooooo  oooooo   oooo    .o.       
-`88.       .888'  `888   `Y88.  `888'   `888.   .8'    .888.      
- 888b     d'888    888   .d88'   888     `888. .8'    .8"888.     
- 8 Y88. .P  888    888ooo88P'    888      `888.8'    .8' `888.    
- 8  `888'   888    888`88b.      888       `888'    .88ooo8888.   
- 8    Y     888    888  `88b.    888        888    .8'     `888.  
-o8o        o888o  o888o  o888o  o888o      o888o  o88o     o8888o
-*/
-
-/*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -287,10 +277,10 @@ label= "BASE"                                   ;
 */
 bindings = <
 	
-&kp ESC    	&kp Q   &mt LWIN W  &kp E   &kp R       &kp T           &kp Y  	    &kp U       &kp I           &kp O       &kp P       &kp LBKT     
-&mt LCTRL RBKT  &kp A   &kp S       &kp D   &kp F       &kp G           &kp H       &kp J       &kp K           &kp L       &kp SEMI    &mt RCTRL SQT
-&mt LALT BSLH   &kp Z   &kp X       &kp C   &kp V       &kp B           &kp N       &kp M       &kp COMMA       &kp DOT     &kp FSLH    &mt RALT MINUS
-				    &lt 2 TAB   &mt LSHFT SPACE &lt 1 RET   &lt 1 RET   &mt RSHFT BSPC  &lt 2 DEL   
+&kp ESC    	&kp Q   &mt LWIN W  &kp E   	&kp R       	&kp T           &kp Y  	    &kp U       	&kp I           &kp O       &kp P       &kp LBKT     
+&mt LCTRL RBKT  &kp A   &kp S       &kp D   	&kp F       	&kp G           &kp H       &kp J       	&kp K           &kp L       &kp SEMI    &mt RCTRL SQT
+&mt LALT BSLH   &kp Z   &kp X       &kp C   	&kp V       	&kp B           &kp N       &kp M       	&kp COMMA       &kp DOT     &kp FSLH    &mt RALT MINUS
+				    &lt 2 TAB   &mt LSHFT SPACE &lt 1 RET   	&lt 1 RET   &mt RSHFT BSPC  	&lt 2 DEL   
             >;
         };
 		
@@ -314,10 +304,10 @@ label= "LOWER"                                  ;
 */
 bindings = <
 
-&kp CAPS    &kp F1   &kp F2      &kp F3  	   &kp F4    &kp GRAVE       &kp EXCL         &kp AT         &kp HASH     &kp DOLLAR   &kp PERCENT   &kp RGUI
-&kp LCTRL   &kp F5   &kp F6      &kp F7            &kp F8    &kp K_CMENU     &colon           &question      &kp STAR     &kp LPAR     &kp RPAR      &kp AMPS
-&kp LALT    &kp F9   &kp F10     &kp F11           &kp F12   &kp LG(SPACE)   &lguillement     &rguillement   &semicolon   &lbracket    &rbracket     &kp CARET
-				 &lt 3 TAB   &mt LSHFT SPACE   &trans    &trans          &mt RSHFT BSPC   &lt 3 DEL
+&kp CAPS    &kp F1   &kp F2    &kp F3  	   &kp F4    	     &kp GRAVE       &kp EXCL         &kp AT           &kp HASH     &kp DOLLAR   &kp PERCENT   &kp RGUI
+&kp LCTRL   &kp F5   &kp F6    &kp F7      &kp F8    	     &kp K_CMENU     &colon           &question        &kp STAR     &kp LPAR     &kp RPAR      &kp AMPS
+&kp LALT    &kp F9   &kp F10   &kp F11     &kp F12   	     &kp LG(SPACE)   &lguillement     &rguillement     &semicolon   &lbracket    &rbracket     &kp CARET
+			       &lt 3 TAB   &mt LSHFT SPACE   &trans   	     &trans           &mt RSHFT BSPC   &lt 3 DEL
             >;
         };
 		
@@ -340,10 +330,10 @@ label= "RAISE"                                  ;
 */
 bindings = <
 
-&kp BSPC    &kp KP_MULTIPLY   &kp KP_N9   &kp KP_N8   &kp KP_N7   &kp PLUS          &kp C_NEXT   &kp HOME    &kp PSCRN        &kp PG_UP   &kp C_VOL_UP   &kp RIGHT_GUI
-&numdot     &kp KP_SLASH      &kp KP_N3   &kp KP_N2   &kp KP_N1   &kp KP_N0         &kp C_PLAY   &kp LEFT    &kp UP           &kp RIGHT   &kp C_VOL_DN   &kp RCTRL 
-&kp EQUAL   &numcomma 	      &kp KP_N6   &kp KP_N5   &kp KP_N4   &kp MINUS         &kp C_PREV   &kp END     &kp DOWN         &kp PG_DN   &kp C_MUTE     &kp RALT
-					  &trans      &mt LSHFT SPACE   &lt 3 RET    &lt 3 RET   &mt RSHFT BSPC   &trans
+&kp BSPC    &kp KP_MULTIPLY   &kp KP_N9   &kp KP_N8   &kp KP_N7   	&kp PLUS          &kp C_NEXT   &kp HOME         &kp PSCRN        &kp PG_UP   &kp C_VOL_UP   &kp RIGHT_GUI
+&numdot     &kp KP_SLASH      &kp KP_N3   &kp KP_N2   &kp KP_N1   	&kp KP_N0         &kp C_PLAY   &kp LEFT         &kp UP           &kp RIGHT   &kp C_VOL_DN   &kp RCTRL 
+&kp EQUAL   &numcomma 	      &kp KP_N6   &kp KP_N5   &kp KP_N4   	&kp MINUS         &kp C_PREV   &kp END          &kp DOWN         &kp PG_DN   &kp C_MUTE     &kp RALT
+					  &trans      &mt LSHFT SPACE   &lt 3 RET    	  &lt 3 RET    &mt RSHFT BSPC   &trans
             >;
         };
 
