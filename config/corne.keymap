@@ -235,10 +235,10 @@
                 key-positions = <18 30>;
                 bindings = <&kp ESC>;
         };
-            combo_comma {
+            combo_dot {
                 timeout-ms = <50>;
-                key-positions = <16 17>;
-                bindings = <&numcomma>;
+                key-positions = <15 16>;
+                bindings = <&numdot>;
         };
             combo_colon {
                 timeout-ms = <50>;
@@ -321,9 +321,9 @@ label= "RAISE"                                  ;
 ┌───────┬───────┬───────┬───────┬───────┬───────┐                   ┌───────┬───────┬───────┬───────┬───────┬───────┐
 │ BKSP  │   *   │   9   │   8   │   7   │   +   │                   │ NEXT  │ HOME  │ PSCRN │ PGUP  │ VOLU  │ RGUI  │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
-│   .   │   /   │   3   │   2   │   1   │   0   │                   │ PLAY  │   ←   │   ↑   │   →   │ VOLD  │ CTRL  │
+│ CTRL  │   /   │   3   │   2   │   1   │   0   │                   │ PLAY  │   ←   │   ↑   │   →   │ VOLD  │ CTRL  │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│   =   │   ,   │   6   │   5   │   4   │   -   │                   │ PREV  │  END  │   ↓   │ PGDN  │ MUTE  │ RALT  │
+│ ALT/= │   ,   │   6   │   5   │   4   │   -   │                   │ PREV  │  END  │   ↓   │ PGDN  │ MUTE  │ RALT  │
 └───────┴───────┴───────┴───────┼───────┼───────┼───────┐   ┌───────┼───────┼───────┼───────┴───────┴───────┴───────┘
                                 │   ▲   │ LSHFT │  ADJ  │   │  ADJ  │ RSHFT │   ▲   │
                                 └───────┴───────┴───────┘   └───────┴───────┴───────┘
@@ -331,8 +331,8 @@ label= "RAISE"                                  ;
 bindings = <
 
 &kp BSPC    &kp KP_MULTIPLY   &kp KP_N9   &kp KP_N8   &kp KP_N7   	&kp PLUS          &kp C_NEXT   &kp HOME         &kp PSCRN        &kp PG_UP   &kp C_VOL_UP   &kp RIGHT_GUI
-&numdot     &kp KP_SLASH      &kp KP_N3   &kp KP_N2   &kp KP_N1   	&kp KP_N0         &kp C_PLAY   &kp LEFT         &kp UP           &kp RIGHT   &kp C_VOL_DN   &kp RCTRL 
-&kp EQUAL   &numcomma 	      &kp KP_N6   &kp KP_N5   &kp KP_N4   	&kp MINUS         &kp C_PREV   &kp END          &kp DOWN         &kp PG_DN   &kp C_MUTE     &kp RALT
+&kp LCTRL     &kp KP_SLASH      &kp KP_N3   &kp KP_N2   &kp KP_N1   	&kp KP_N0         &kp C_PLAY   &kp LEFT         &kp UP           &kp RIGHT   &kp C_VOL_DN   &kp RCTRL 
+&mt LALT EQUAL   &numcomma 	      &kp KP_N6   &kp KP_N5   &kp KP_N4   	&kp MINUS         &kp C_PREV   &kp END          &kp DOWN         &kp PG_DN   &kp C_MUTE     &kp RALT
 					  &trans      &mt LSHFT SPACE   &lt 3 RET    	  &lt 3 RET    &mt RSHFT BSPC   &trans
             >;
         };
@@ -352,7 +352,7 @@ label= "ADJUST"                                 ;
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤
 │       │ NUMLK │ CAPS  │ SLCK  │  INS  │ PAUSE │                   │  WWW  │  CALC │ EMAIL │       │       │       │
 └───────┴───────┴───────┴───────┼───────┼───────┼───────┐   ┌───────┼───────┼───────┼───────┴───────┴───────┴───────┘
-                                │   ▲   │       │   ▼   │   │   ▼   │       │   ▲   │
+                                │   ▲   │ RESET │   ▼   │   │   ▼   │ RESET │   ▲   │
                                 └───────┴───────┴───────┘   └───────┴───────┴───────┘
 */
 bindings = <
@@ -360,7 +360,7 @@ bindings = <
 &bootloader         &none          &none       	  &none          &bt BT_PRV     &bt BT_NXT        &kp RA(N8)    &euro           &none           &none           &none           &bootloader
 &bt BT_CLR  	    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4  	  &bt BT_SEL 4  &bt BT_SEL 3    &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0    &bt BT_CLR
 &none               &kp KP_NUM     &kp CAPS       &kp SLCK       &kp INS        &kp PAUSE_BREAK   &kp C_AL_WWW  &kp C_AL_CALC   &kp C_AL_EMAIL  &none           &none           &none
-						  &trans         &none          &trans        	  &trans        &none           &trans
+						  &trans         &sys_reset          &trans        	  &trans        &sys_reset           &trans
             >;
         };
     };
