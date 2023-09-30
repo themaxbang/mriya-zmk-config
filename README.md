@@ -1,4 +1,4 @@
-# ZMK Config for the MRIYA Keyboard
+## ZMK Config for the MRIYA Keyboard
 
 Based on [Watchman layouts](https://github.com/aroum/Watchman-layouts)
 
