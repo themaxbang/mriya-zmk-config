@@ -79,8 +79,8 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
-        hash: hash {
-            label = "ZM_hash";
+        quote: quote {
+            label = "ZM_quote";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
@@ -89,7 +89,7 @@
                 <&macro_press>,
                 <&kp LALT>,
                 <&macro_tap>,
-                <&kp KP_N3 &kp KP_N5>,
+                <&kp KP_N3 &kp KP_N4>,
                 <&macro_release>,
                 <&kp LALT>;
         };
@@ -219,48 +219,6 @@
                 <&macro_release>,
                 <&kp LALT>;
 	    };
-        at: at {
-            label = "ZM_at";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N6 &kp KP_N4>,
-                <&macro_release>,
-                <&kp LALT>;
-	    };
-        dollar: dollar {
-            label = "ZM_dollar";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N3 &kp KP_N6>,
-                <&macro_release>,
-                <&kp LALT>;
-	    };
-         numerosign: numerosign {
-            label = "ZM_dollar";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N5>,
-                <&macro_release>,
-                <&kp LALT>;
-	    };
          lsqbracket: lsqbracket {
             label = "ZM_lsqbracket";
             compatible = "zmk,behavior-macro";
@@ -310,15 +268,15 @@
                 key-positions = <15 16>;
                 bindings = <&numdot>;
         };
-            combo_IM {
-                timeout-ms = <50>;
-                key-positions = <18 19>;
-                bindings = <&kp C_AL_IM>;
-        };
             combo_calc {
                 timeout-ms = <50>;
                 key-positions = <16 17>;
                 bindings = <&kp C_AL_CALC>;
+        };
+           combo_quote {
+                timeout-ms = <50>;
+                key-positions = <18 19>;
+                bindings = <&quote>;
         };
             combo_del {
                 timeout-ms = <50>;
@@ -335,10 +293,10 @@
                 key-positions = <32 33>;
                 bindings = <&rsqbracket>;
         };
-            combo_numerosign {
+            combo_hash {
                 timeout-ms = <50>;
                 key-positions = <7 8>;
-                bindings = <&numerosign>;
+                bindings = <&kp HASH>;
         };
     };
 };
@@ -394,9 +352,9 @@ label= "LOWER"                                  ;
 */
 bindings = <
 
-&kp CAPS    &kp F1   &kp F2    &kp F3  	   &kp F4    	     &kp GRAVE       &kp EXCL     &at              &hash          &dollar     &kp PERCENT   &kp RGUI
-&kp LCTRL   &kp F5   &kp F6    &kp F7      &kp F8    	     &kp K_CMENU     &colon       &question        &kp STAR       &kp LPAR    &kp RPAR      &kp AMPS
-&kp LALT    &kp F9   &kp F10   &kp F11     &kp F12   	     &kp LG(SPACE)   &semicolon   &lguillement     &rguillement   &lbracket   &rbracket     &kp CARET
+&kp CAPS    &kp F1   &kp F2    &kp F3  	   &kp F4    	     &kp GRAVE       &kp EXCL     &kp AT           &kp HASH       &kp DOLLAR   &kp PERCENT   &kp RGUI
+&kp LCTRL   &kp F5   &kp F6    &kp F7      &kp F8    	     &kp K_CMENU     &colon       &question        &kp STAR       &kp LPAR     &kp RPAR      &kp AMPS
+&kp LALT    &kp F9   &kp F10   &kp F11     &kp F12   	     &kp LG(SPACE)   &semicolon   &lguillement     &rguillement   &lbracket    &rbracket     &kp CARET
 			       &lt 3 TAB   &mt LSHFT SPACE   &trans   	     &trans       &mt RSHFT BSPC   &lt 3 DEL
             >;
         };
