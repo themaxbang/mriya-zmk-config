@@ -260,7 +260,7 @@
         };
             combo_esc {
                 timeout-ms = <50>;
-                key-positions = <18 30>;
+                key-positions = <18 19>;
                 bindings = <&kp ESC>;
         };
             combo_dot {
@@ -270,17 +270,12 @@
         };
             combo_calc {
                 timeout-ms = <50>;
-                key-positions = <16 17>;
+                key-positions = <17 29>;
                 bindings = <&kp C_AL_CALC>;
-        };
-           combo_quote {
-                timeout-ms = <50>;
-                key-positions = <18 19>;
-                bindings = <&quote>;
         };
             combo_del {
                 timeout-ms = <50>;
-                key-positions = <17 29>;
+                key-positions = <16 17>;
                 bindings = <&kp DEL>;
         };
             combo_lsqbracket {
@@ -293,10 +288,10 @@
                 key-positions = <32 33>;
                 bindings = <&rsqbracket>;
         };
-            combo_hash {
+            combo_numcomma {
                 timeout-ms = <50>;
-                key-positions = <7 8>;
-                bindings = <&kp HASH>;
+                key-positions = <31 32>;
+                bindings = <&numcomma>;
         };
     };
 };
@@ -345,17 +340,17 @@ label= "LOWER"                                  ;
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
 │ CTRL  │  F5   │  F6   │  F7   │  F8   │ MENU  │                   │   :   │   ?   │   *   │   (   │   )   │   &   │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│ LALT  │  F9   │  F10  │  F11  │  F12  │ LANG  │                   │   ;   │   «   │   »   │   {   │   }   │   ^   │
+│ LALT  │  F9   │  F10  │  F11  │  F12  │ LANG  │                   │   "   │   «   │   »   │   {   │   }   │   ^   │
 └───────┴───────┴───────┴───────┼───────┼───────┼───────┐   ┌───────┼───────┼───────┼───────┴───────┴───────┴───────┘
                                 │  ADJ  │ LSHFT │   ▼   │   │   ▼   │ RSHFT │  ADJ  │
                                 └───────┴───────┴───────┘   └───────┴───────┴───────┘   
 */
 bindings = <
 
-&kp CAPS    &kp F1   &kp F2    &kp F3  	   &kp F4    	     &kp GRAVE       &kp EXCL     &kp AT           &kp HASH       &kp DOLLAR   &kp PERCENT   &kp RGUI
-&kp LCTRL   &kp F5   &kp F6    &kp F7      &kp F8    	     &kp K_CMENU     &colon       &question        &kp STAR       &kp LPAR     &kp RPAR      &kp AMPS
-&kp LALT    &kp F9   &kp F10   &kp F11     &kp F12   	     &kp LG(SPACE)   &semicolon   &lguillement     &rguillement   &lbracket    &rbracket     &kp CARET
-			       &lt 3 TAB   &mt LSHFT SPACE   &trans   	     &trans       &mt RSHFT BSPC   &lt 3 DEL
+&kp CAPS    &kp F1   &kp F2    &kp F3  	   &kp F4    	     &kp GRAVE       &kp EXCL   &kp AT           &kp HASH       &kp DOLLAR   &kp PERCENT   &kp RGUI
+&kp LCTRL   &kp F5   &kp F6    &kp F7      &kp F8    	     &kp K_CMENU     &colon     &question        &kp STAR       &kp LPAR     &kp RPAR      &kp AMPS
+&kp LALT    &kp F9   &kp F10   &kp F11     &kp F12   	     &kp LG(SPACE)   &quote     &lguillement     &rguillement   &lbracket    &rbracket     &kp CARET
+			       &lt 3 TAB   &mt LSHFT SPACE   &trans   	     &trans     &mt RSHFT BSPC   &lt 3 DEL
             >;
         };
 		
