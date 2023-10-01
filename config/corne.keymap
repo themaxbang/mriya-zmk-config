@@ -293,6 +293,11 @@
                 key-positions = <31 32>;
                 bindings = <&numcomma>;
         };
+            combo_numlock {
+                timeout-ms = <50>;
+                key-positions = <3 4>;
+                bindings = <&kp KP_NUM>;
+        };
     };
 };
 
@@ -309,9 +314,9 @@ label= "BASE"                                   ;
 // └────────────────────────────────────────────┘
 /*
 ┌───────┬───────┬───────┬───────┬───────┬───────┐                   ┌───────┬───────┬───────┬───────┬───────┬───────┐
-│  ESC  │   Q   │   W   │   E   │   R   │   T   │                   │   Y   │   U   │   I   │   O   │   P   │   [   │
+│  ESC  │   Q   │ LGUI/W│   E   │   R   │   T   │                   │   Y   │   U   │   I   │   O   │   P   │   [   │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
-│ CTRL/]│ LGUI/A│   S   │   D   │   F   │   G   │                   │   H   │   J   │   K   │   L   │   ;   │ RGUI/'│
+│ CTRL/]│   A   │   S   │   D   │   F   │   G   │                   │   H   │   J   │   K   │   L   │   ;   │RCTRL/'│
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤
 │ LALT/\│   Z   │   X   │   C   │   V   │   B   │                   │   N   │   M   │   ,   │   .   │   /   │ RALT/-│
 └───────┴───────┴───────┴───────┼───────┼───────┼───────┐   ┌───────┼───────┼───────┼───────┴───────┴───────┴───────┘
@@ -321,7 +326,7 @@ label= "BASE"                                   ;
 bindings = <
 	
 &kp ESC    	 &kp Q        &kp W   &kp E   	  &kp R       	    &kp T       &kp Y  	    &kp U            &kp I       &kp O     &kp P           &kp LBKT     
-&mt LCTRL RBKT   &mt LWIN A   &kp S   &kp D   	  &kp F       	    &kp G       &kp H       &kp J            &kp K       &kp L     &mt RWIN SEMI   &mt RCTRL SQT
+&mt LCTRL RBKT   &mt LWIN A   &kp S   &kp D   	  &kp F       	    &kp G       &kp H       &kp J            &kp K       &kp L     &kp SEMI   &mt RCTRL SQT
 &mt LALT BSLH    &kp Z        &kp X   &kp C   	  &kp V       	    &kp B       &kp N       &kp M            &kp COMMA   &kp DOT   &kp FSLH        &mt RALT MINUS
 				      &lt 2 TAB   &mt LSHFT SPACE   &lt 1 RET   &lt 1 RET   &mt RSHFT BSPC   &lt 2 DEL   
             >;
@@ -362,18 +367,18 @@ label= "RAISE"                                  ;
 // └────────────────────────────────────────────┘
 /*
 ┌───────┬───────┬───────┬───────┬───────┬───────┐                   ┌───────┬───────┬───────┬───────┬───────┬───────┐
-│ BKSP  │   *   │   9   │   8   │   7   │   +   │                   │ NEXT  │ HOME  │ PSCRN │ PGUP  │ VOLU  │ NUMLK │
+│ BKSP  │   *   │   9   │   8   │   7   │   +   │                   │ NEXT  │ HOME  │ PSCRN │ PGUP  │ VOLU  │ RGUI  │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
 │ CTRL  │   /   │   3   │   2   │   1   │   0   │                   │ PLAY  │   ←   │   ↑   │   →   │ VOLD  │ CTRL  │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤
 │ ALT/= │   ,   │   6   │   5   │   4   │   -   │                   │ PREV  │  END  │   ↓   │ PGDN  │ MUTE  │ RALT  │
 └───────┴───────┴───────┴───────┼───────┼───────┼───────┐   ┌───────┼───────┼───────┼───────┴───────┴───────┴───────┘
                                 │   ▲   │ LSHFT │  ADJ  │   │  ADJ  │ RSHFT │   ▲   │
-                                └───────┴───────┴───────┘   └───────┴───────┴───────┘
+                                └───────┴───────┴───────┘   └───────┴───────┴───────┘  
 */
 bindings = <
 
-&kp BSPC             &kp KP_MULTIPLY   &kp KP_N9   &kp KP_N8   &kp KP_N7         &kp PLUS    &kp C_NEXT   &kp HOME         &kp PSCRN   &kp PG_UP   &kp C_VOL_UP   &kp KP_NUM
+&kp BSPC             &kp KP_MULTIPLY   &kp KP_N9   &kp KP_N8   &kp KP_N7         &kp PLUS    &kp C_NEXT   &kp HOME         &kp PSCRN   &kp PG_UP   &kp C_VOL_UP   &kp RGUI
 &mt LCTRL KP_ENTER   &kp KP_SLASH      &kp KP_N3   &kp KP_N2   &kp KP_N1         &kp KP_N0   &kp C_PLAY   &kp LEFT         &kp UP      &kp RIGHT   &kp C_VOL_DN   &kp RCTRL 
 &mt LALT EQUAL       &numcomma 	       &kp KP_N6   &kp KP_N5   &kp KP_N4         &kp MINUS   &kp C_PREV   &kp END          &kp DOWN    &kp PG_DN   &kp C_MUTE     &kp RALT
 				                   &trans      &mt LSHFT SPACE   &lt 3 ESC   &lt 3 RET    &mt RSHFT BSPC   &trans
