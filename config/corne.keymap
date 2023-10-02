@@ -298,6 +298,21 @@
                 key-positions = <3 4>;
                 bindings = <&kp KP_NUM>;
         };
+            combo_copy {
+                timeout-ms = <50>;
+                key-positions = <26 27>;
+                bindings = <&kp LC(C)>;
+        }; 
+            combo_cut {
+                timeout-ms = <50>;
+                key-positions = <27 28>;
+                bindings = <&kp LC(X)>;
+        };
+            combo_paste {
+                timeout-ms = <50>;
+                key-positions = <14 15>;
+                bindings = <&kp LC(V)>;
+        };     
     };
 };
 
