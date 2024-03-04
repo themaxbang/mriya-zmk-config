@@ -270,7 +270,7 @@
         };
             combo_dot {
                 timeout-ms = <50>;
-                key-positions = <18 19>;
+                key-positions = <19 20>;
                 bindings = <&numdot>;
         };
             combo_esc_left {
