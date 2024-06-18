@@ -415,7 +415,7 @@ label= "ADJUST"                                 ;
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤
 │ CAPS  │ NUMLK │  INS  │ SLCK  │ PAUSE │BT PREV│                   │BT PREV│ PAUSE │ SLCK  │  INS  │ NUMLK │ CAPS  │
 └───────┴───────┴───────┴───────┼───────┼───────┼───────┐   ┌───────┼───────┼───────┼───────┴───────┴───────┴───────┘
-                                │   ▲   │ RESET │   ▼   │   │   ▼   │ RESET │   ▲   │
+                                │   ▲   │ POWER │   ▼   │   │   ▼   │ POWER │   ▲   │
                                 └───────┴───────┴───────┘   └───────┴───────┴───────┘
 */
 bindings = <
@@ -423,7 +423,7 @@ bindings = <
 &bootloader   &none          &none          &none          &bt BT_PRV        &bt BT_NXT     &bt BT_NXT    &kp RA(N8)        &euro          &cprght        &degree        &bootloader
 &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3      &bt BT_SEL 4   &bt BT_SEL 4  &bt BT_SEL 3      &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &bt BT_CLR
 &kp CAPS      &kp KP_NUM     &kp INS        &kp SLCK       &kp PAUSE_BREAK   &bt BT_PRV     &bt BT_PRV    &kp PAUSE_BREAK   &kp SLCK       &kp INS        &kp KP_NUM     &kp CAPS
-					    &trans         &sys_reset        &trans         &trans        &sys_reset        &trans
+					    &trans         &ext_power        &trans         &trans        &ext_power        &trans
             >;
         };
     };
