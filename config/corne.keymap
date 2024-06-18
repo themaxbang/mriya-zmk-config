@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/ext_power.h>
 
 #define BASE   0
 #define LOWER  1
@@ -423,7 +423,7 @@ bindings = <
 &bootloader   &none          &none          &none          &bt BT_PRV        &bt BT_NXT     &bt BT_NXT    &kp RA(N8)        &euro          &cprght        &degree        &bootloader
 &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3      &bt BT_SEL 4   &bt BT_SEL 4  &bt BT_SEL 3      &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &bt BT_CLR
 &kp CAPS      &kp KP_NUM     &kp INS        &kp SLCK       &kp PAUSE_BREAK   &bt BT_PRV     &bt BT_PRV    &kp PAUSE_BREAK   &kp SLCK       &kp INS        &kp KP_NUM     &kp CAPS
-					    &trans         &ext_power        &trans         &trans        &ext_power        &trans
+					    &trans         &soft_off        &trans         &trans        &soft_off        &trans
             >;
         };
     };
