@@ -1,0 +1,12 @@
+file_format: "1"
+id: mriya
+name: MRIYA
+type: shield
+url: https://github.com/themaxbang/MRIYA
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - mriya_left
+  - mriya_right
+  - mriya_dongle
