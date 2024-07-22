@@ -4,6 +4,9 @@
 config SHIELD_MRIYA_CENTRAL_DONGLE
     def_bool $(shields_list_contains,mriya_central_dongle)
 
+config SHIELD_MRIYA_CENTRAL_LEFT
+    def_bool $(shields_list_contains,mriya_central_left)    
+
 config SHIELD_MRIYA_PERIPHERAL_LEFT
     def_bool $(shields_list_contains,mriya_peripheral_left)
 
