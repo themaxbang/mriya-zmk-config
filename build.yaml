@@ -34,5 +34,7 @@ include:
   # reset
   - board: seeeduino_xiao_ble
     shield: settings_reset
+    artifact-name: settings_reset_xiao
   - board: nice_nano_v2
     shield: settings_reset
+    artifact-name: settings_reset_nice_nano_v2

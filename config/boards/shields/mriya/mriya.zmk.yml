@@ -2,7 +2,6 @@ file_format: "1"
 id: mriya
 name: MRIYA
 type: shield
-url: https://github.com/themaxbang/MRIYA
 requires: [pro_micro]
 features:
   - keys
