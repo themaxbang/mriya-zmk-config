@@ -13,6 +13,7 @@
 #define LOWER  1
 #define RAISE  2
 #define ADJUST 3
+#define NAVI   4
 
 &lt {
     quick_tap_ms = <220>;
@@ -329,21 +330,21 @@ label= "BASE"                                   ;
 // └────────────────────────────────────────────┘
 /*
 ┌───────┬───────┬───────┬───────┬───────┬───────┐                   ┌───────┬───────┬───────┬───────┬───────┬───────┐
-│ LGUI/]│   Q   │   W   │   E   │   R   │   T   │                   │   Y   │   U   │   I   │   O   │   P   │RGUI/[ │
+│   ]   │   Q   │   W   │   E   │   R   │   T   │                   │   Y   │   U   │   I   │   O   │   P   │   [   │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
-│ CTRL/`│   A   │   S   │   D   │   F   │   G   │                   │   H   │   J   │   K   │   L   │   ;   │RCTRL/'│
+│   `   │   A   │   S   │   D   │   F   │   G   │                   │   H   │   J   │   K   │   L   │   ;   │   '   │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│ LALT/\│   Z   │   X   │   C   │   V   │   B   │                   │   N   │   M   │   ,   │   .   │   /   │RALT/- │
+│   \   │ Z/NAV │   X   │   C   │   V   │   B   │                   │   N   │   M   │   ,   │   .   │   /   │   -   │
 └───────┴───────┴───────┴───────┼───────┼───────┼───────┐   ┌───────┼───────┼───────┼───────┴───────┴───────┴───────┘
                                 │ RAISE │ SPACE │ LOWER │   │ LOWER │  BKSP │ RAISE │
                                 └───────┴───────┴───────┘   └───────┴───────┴───────┘   
 */
 bindings = <
 	
-&mt LGUI RBKT 	 &kp Q   &kp W        &kp E   	  &kp R       	    &kp T       &kp Y  	    &kp U            &kp I       &kp O     &kp P      &mt RGUI LBKT     
-&mt LCTRL GRAVE  &kp A   &kp S        &kp D   	  &kp F       	    &kp G       &kp H       &kp J            &kp K       &kp L     &kp SEMI   &mt RCTRL SQT
-&mt LALT BSLH    &kp Z   &kp X        &kp C   	  &kp V       	    &kp B       &kp N       &kp M            &kp COMMA   &kp DOT   &kp FSLH   &mt RALT MINUS
-				      &lt 2 TAB   &mt LSHFT SPACE   &lt 1 RET   &lt 1 RET   &mt RSHFT BSPC   &lt 2 DEL   
+&kp RBKT   &kp Q        &kp W        &kp E   	   &kp R             &kp T       &kp Y  	 &kp U            &kp I         &kp O       &kp P           &kp LBKT     
+&kp GRAVE  &mt LGUI A   &mt LALT S   &mt LSHFT D   &mt LCTRL F       &kp G       &kp H       &mt RCTRL J      &mt RSHFT K   &mt RALT L  &mt RGUI SEMI   &kp SQT
+&kp BSLH   &lt 4 Z      &kp X        &kp C   	   &kp V             &kp B       &kp N       &kp M            &kp COMMA     &kp DOT     &kp FSLH        &kp MINUS
+				                     &lt 2 TAB     &mt LSHFT SPACE   &lt 1 RET   &lt 1 RET   &mt RSHFT BSPC   &lt 2 DEL   
             >;
         };
 		
@@ -367,10 +368,10 @@ label= "LOWER"                                  ;
 */
 bindings = <
 
-&kp CAPS    &kp F10   &kp F9    &kp F8  	&kp F7    	     &kp GRAVE       &kp EXCL   &kp AT           &kp HASH       &kp DOLLAR   &kp PERCENT   &kp RGUI
-&kp LCTRL   &kp F11   &kp F3    &kp F2      &kp F1    	     &kp K_CMENU     &colon     &question        &kp STAR       &kp LPAR     &kp RPAR      &kp AMPS
-&kp LALT    &kp F12   &kp F6    &kp F5      &kp F4   	     &kp LG(SPACE)   &quote     &lguillement     &rguillement   &lbracket    &rbracket     &kp CARET
-			       &lt 3 TAB   &mt LSHFT SPACE   &trans   	     &trans     &mt RSHFT BSPC   &lt 3 DEL
+&kp CAPS    &kp F10   &kp F9    &kp F8  	&kp F7    	      &kp GRAVE       &kp EXCL   &kp AT           &kp HASH       &kp DOLLAR   &kp PERCENT   &kp RGUI
+&kp LCTRL   &kp F11   &kp F3    &kp F2      &kp F1    	      &kp K_CMENU     &colon     &question        &kp STAR       &kp LPAR     &kp RPAR      &kp AMPS
+&kp LALT    &kp F12   &kp F6    &kp F5      &kp F4   	      &kp LG(SPACE)   &quote     &lguillement     &rguillement   &lbracket    &rbracket     &kp CARET
+			                    &lt 3 TAB   &mt LSHFT SPACE   &trans   	      &trans     &mt RSHFT BSPC   &lt 3 DEL
             >;
         };
 		
@@ -396,12 +397,11 @@ bindings = <
 &kp BSPC             &kp KP_MULTIPLY   &kp KP_N9   &kp KP_N8   &kp KP_N7         &kp PLUS    &kp C_NEXT   &kp HOME         &kp PSCRN   &kp PG_UP   &kp C_VOL_UP   &kp RGUI
 &mt LCTRL KP_ENTER   &kp KP_SLASH      &kp KP_N3   &kp KP_N2   &kp KP_N1         &kp KP_N0   &kp C_PLAY   &kp LEFT         &kp UP      &kp RIGHT   &kp C_VOL_DN   &kp RCTRL 
 &mt LALT EQUAL       &numdot 	       &kp KP_N6   &kp KP_N5   &kp KP_N4         &kp MINUS   &kp C_PREV   &kp END          &kp DOWN    &kp PG_DN   &kp C_MUTE     &kp RALT
-				                       &trans      &mt LSHFT SPACE   &lt 3 ESC   &lt 3 RET    &mt RSHFT BSPC   &trans
+				                                   &trans      &mt LSHFT SPACE   &lt 3 ESC   &lt 3 RET    &mt RSHFT BSPC   &trans
             >;
         };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
 
         adjust_layer {
 // ┌────────────────────────────────────────────┐
@@ -423,7 +423,33 @@ bindings = <
 &bootloader   &none          &none          &none          &bt BT_PRV        &bt BT_NXT     &bt BT_NXT    &kp RA(N8)        &euro          &cprght        &degree        &bootloader
 &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3      &bt BT_SEL 4   &bt BT_SEL 4  &bt BT_SEL 3      &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &bt BT_CLR
 &kp CAPS      &kp KP_NUM     &kp INS        &kp SLCK       &kp PAUSE_BREAK   &bt BT_PRV     &bt BT_PRV    &kp PAUSE_BREAK   &kp SLCK       &kp INS        &kp KP_NUM     &kp CAPS
-					    &trans         &soft_off        &trans         &trans        &soft_off        &trans
+					                        &trans         &soft_off         &trans         &trans        &soft_off         &trans
+            >;
+        };
+
+// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄		
+
+        navi_layer {
+// ┌────────────────────────────────────────────┐
+label= "NAVI"                                   ;
+// └────────────────────────────────────────────┘
+/*
+┌───────┬───────┬───────┬───────┬───────┬───────┐                   ┌───────┬───────┬───────┬───────┬───────┬───────┐
+│       │       │       │       │ HOME  │ PGUP  │                   │ PGUP  │ HOME  │       │       │       │       │
+├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
+│       │       │   ←   │   ↑   │   →   │       │                   │       │   ←   │   ↑   │   →   │       │       │
+├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤
+│       │       │       │   ↓   │  END  │ PGDN  │                   │ PGDN  │  END  │   ↓   │       │       │       │
+└───────┴───────┴───────┴───────┼───────┼───────┼───────┐   ┌───────┼───────┼───────┼───────┴───────┴───────┴───────┘
+                                │       │       │       │   │       │       │       │
+                                └───────┴───────┴───────┘   └───────┴───────┴───────┘  
+*/
+bindings = <
+
+&trans   &trans   &trans     &trans     &kp HOME    &kp PG_UP   &kp PG_UP   &kp HOME   &trans      &trans      &trans   &trans
+&trans   &trans   &kp LEFT   &kp UP     &kp RIGHT   &trans      &trans      &kp LEFT   &kp UP      &kp RIGHT   &trans   &trans 
+&trans   &trans   &trans     &kp DOWN   &kp END     &kp PG_DN   &kp PG_DN   &kp END    &kp DOWN    &trans      &trans   &trans
+				             &trans     &trans      &trans      &trans      &trans     &trans
             >;
         };
     };
