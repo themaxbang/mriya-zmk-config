@@ -342,7 +342,7 @@ label= "BASE"                                   ;
 bindings = <
 	
 &kp RBKT   &kp Q        &kp W        &kp E   	   &kp R         &kp T       &kp Y  	 &kp U         &kp I         &kp O       &kp P           &kp LBKT     
-&kp GRAVE  &mt LGUI A   &mt LALT S   &mt LSHFT D   &mt LCTRL F   &kp G       &kp H       &mt RCTRL J   &mt RSHFT K   &mt RALT L  &mt RGUI SEMI   &kp SQT
+&kp GRAVE  &mt LGUI A   &mt LALT S   &mt LCTRL D   &mt LSHFT F   &kp G       &kp H       &mt RSHFT J   &mt RCTRL K   &mt RALT L  &mt RGUI SEMI   &kp SQT
 &kp BSLH   &kp Z        &kp X        &kp C   	   &kp V         &kp B       &kp N       &kp M         &kp COMMA     &kp DOT     &kp FSLH        &kp MINUS
 				                     &lt 2 TAB     &lt 4 SPACE   &lt 1 RET   &lt 1 RET   &lt 4 BSPC    &lt 2 DEL   
             >;
@@ -435,21 +435,21 @@ label= "NAVI"                                   ;
 // └────────────────────────────────────────────┘
 /*
 ┌───────┬───────┬───────┬───────┬───────┬───────┐                   ┌───────┬───────┬───────┬───────┬───────┬───────┐
-│       │       │ PGUP  │       │ HOME  │       │                   │       │ HOME  │       │ PGUP  │       │       │
+│       │  BKSP │ PGUP  │  TAB  │ HOME  │       │                   │       │ HOME  │  TAB  │ PGUP  │  BKSP │       │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
 │       │       │   ←   │   ↑   │   →   │       │                   │       │   ←   │   ↑   │   →   │       │       │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│       │       │ PGDN  │   ↓   │  END  │       │                   │       │  END  │   ↓   │ PGDN  │       │       │
+│       │       │ PGDN  │   ↓   │  END  │  DEL  │                   │  DEL  │  END  │   ↓   │ PGDN  │       │       │
 └───────┴───────┴───────┴───────┼───────┼───────┼───────┐   ┌───────┼───────┼───────┼───────┴───────┴───────┴───────┘
                                 │       │       │       │   │       │       │       │
                                 └───────┴───────┴───────┘   └───────┴───────┴───────┘  
 */
 bindings = <
 
-&trans   &trans   &kp PG_UP       &trans        &kp HOME         &trans      &trans      &kp HOME         &trans         &kp PG_UP       &trans   &trans
-&trans   &trans   &mt LALT LEFT   &mt LSHFT UP  &mt LCTRL RIGHT  &trans      &trans      &mt RCTRL LEFT   &mt RSHFT UP   &mt RALT RIGHT  &trans   &trans 
-&trans   &trans   &kp PG_DN       &kp DOWN      &kp END          &trans      &trans      &kp END          &kp DOWN       &kp PG_DN       &trans   &trans
-				                  &trans        &trans           &trans      &trans      &trans           &trans
+&none   &kp BSPC  &kp PG_UP       &kp TAB       &kp HOME         &none       &none       &kp HOME         &kp TAB        &kp PG_UP       &kp BSPC  &none
+&none   &none     &mt LALT LEFT   &mt LCTRL UP  &mt LSHFT RIGHT  &none       &none       &mt RSHFT LEFT   &mt RCTRL UP   &mt RALT RIGHT  &none     &none 
+&none   &none     &kp PG_DN       &kp DOWN      &kp END          &kp DEL     &kp DEL     &kp END          &kp DOWN       &kp PG_DN       &none     &none
+				                  &none         &trans           &none       &none       &trans           &none
             >;
         };
     };
