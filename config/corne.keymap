@@ -16,11 +16,15 @@
 #define NAVI   4
 
 &lt {
-    quick_tap_ms = <250>;
+    flavor = "balanced";
+    tapping-term-ms = <300>;
+    quick-tap-ms = <175>;
 };
 
 &mt {
-    quick_tap_ms = <250>;
+    flavor = "balanced";
+    tapping-term-ms = <300>;
+    quick-tap-ms = <175>;
 };
 / {
     macros {
@@ -435,9 +439,9 @@ label= "NAVI"                                   ;
 // └────────────────────────────────────────────┘
 /*
 ┌───────┬───────┬───────┬───────┬───────┬───────┐                   ┌───────┬───────┬───────┬───────┬───────┬───────┐
-│       │  BKSP │ PGUP  │  TAB  │ HOME  │       │                   │       │ HOME  │  TAB  │ PGUP  │  BKSP │       │
+│       │  BKSP │ PGUP  │  TAB  │ HOME  │  ESC  │                   │  ESC  │ HOME  │  TAB  │ PGUP  │  BKSP │       │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
-│       │       │   ←   │   ↑   │   →   │       │                   │       │   ←   │   ↑   │   →   │       │       │
+│       │       │   ←   │   ↑   │   →   │ ENTER │                   │ ENTER │   ←   │   ↑   │   →   │       │       │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤
 │       │       │ PGDN  │   ↓   │  END  │  DEL  │                   │  DEL  │  END  │   ↓   │ PGDN  │       │       │
 └───────┴───────┴───────┴───────┼───────┼───────┼───────┐   ┌───────┼───────┼───────┼───────┴───────┴───────┴───────┘
@@ -446,8 +450,8 @@ label= "NAVI"                                   ;
 */
 bindings = <
 
-&none   &kp BSPC  &kp PG_UP       &kp TAB       &kp HOME         &none       &none       &kp HOME         &kp TAB        &kp PG_UP       &kp BSPC  &none
-&none   &none     &mt LALT LEFT   &mt LCTRL UP  &mt LSHFT RIGHT  &none       &none       &mt RSHFT LEFT   &mt RCTRL UP   &mt RALT RIGHT  &none     &none 
+&none   &kp BSPC  &kp PG_UP       &kp TAB       &kp HOME         &kp ESC     &kp ESC     &kp HOME         &kp TAB        &kp PG_UP       &kp BSPC  &none
+&none   &none     &mt LALT LEFT   &mt LCTRL UP  &mt LSHFT RIGHT  &kp RET     &kp RET     &mt RSHFT LEFT   &mt RCTRL UP   &mt RALT RIGHT  &none     &none 
 &none   &none     &kp PG_DN       &kp DOWN      &kp END          &kp DEL     &kp DEL     &kp END          &kp DOWN       &kp PG_DN       &none     &none
 				                  &none         &trans           &none       &none       &trans           &none
             >;
