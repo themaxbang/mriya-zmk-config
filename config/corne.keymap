@@ -17,7 +17,7 @@
 
 &lt {
     flavor = "balanced";
-    tapping-term-ms = <280>;
+    tapping-term-ms = <220>;
     quick-tap-ms = <175>;
 };
 
@@ -345,10 +345,10 @@ label= "BASE"                                   ;
 */
 bindings = <
 	
-&kp RBKT   &kp Q        &kp W        &kp E   	   &kp R         &kp T       &kp Y  	 &kp U         &kp I         &kp O       &kp P           &kp LBKT     
-&kp GRAVE  &mt LGUI A   &mt LALT S   &mt LCTRL D   &mt LSHFT F   &kp G       &kp H       &mt RSHFT J   &mt RCTRL K   &mt RALT L  &mt RGUI SEMI   &kp SQT
-&kp BSLH   &kp Z        &kp X        &kp C   	   &kp V         &kp B       &kp N       &kp M         &kp COMMA     &kp DOT     &kp FSLH        &kp MINUS
-				                     &lt 2 TAB     &lt 4 SPACE   &lt 1 RET   &lt 1 RET   &lt 4 BSPC    &lt 2 DEL   
+&kp RBKT   &kp Q        &kp W        &kp E   	       &kp R         &kp T       &kp Y  	 &kp U         &kp I         &kp O       &kp P           &kp LBKT     
+&kp GRAVE  &mt LGUI A   &mt LALT S   &mt LCTRL D       &mt LSHFT F   &kp G       &kp H       &mt RSHFT J   &mt RCTRL K   &mt RALT L  &mt RGUI SEMI   &kp SQT
+&kp BSLH   &kp Z        &kp X        &kp C   	       &kp V         &kp B       &kp N       &kp M         &kp COMMA     &kp DOT     &kp FSLH        &kp MINUS
+				                     &lt 2 LG(SPACE)   &lt 4 SPACE   &lt 1 RET   &lt 1 RET   &lt 4 BSPC    &lt 2 DEL   
             >;
         };
 		
@@ -387,11 +387,11 @@ label= "RAISE"                                  ;
 // └────────────────────────────────────────────┘
 /*
 ┌───────┬───────┬───────┬───────┬───────┬───────┐                   ┌───────┬───────┬───────┬───────┬───────┬───────┐
-│ BKSP  │   *   │   9   │   8   │   7   │   +   │                   │ NEXT  │ HOME  │ PSCRN │ PGUP  │ VOLU  │ RGUI  │
+│ BKSP  │   *   │   9   │   8   │   7   │   +   │                   │ NEXT  │ VOLU  │ PSCRN │       │       │ RGUI  │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
-│ CTRL  │   /   │   3   │   2   │   1   │   0   │                   │ PLAY  │   ←   │   ↑   │   →   │ VOLD  │ CTRL  │
+│ CTRL  │   /   │   3   │   2   │   1   │   0   │                   │ PLAY  │ VOLD  │       │       │       │ CTRL  │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│ ALT/= │   .   │   6   │   5   │   4   │   -   │                   │ PREV  │  END  │   ↓   │ PGDN  │ MUTE  │ RALT  │
+│ ALT/= │   .   │   6   │   5   │   4   │   -   │                   │ PREV  │ MUTE  │       │       │       │ RALT  │
 └───────┴───────┴───────┴───────┼───────┼───────┼───────┐   ┌───────┼───────┼───────┼───────┴───────┴───────┴───────┘
                                 │   ▲   │ LSHFT │  ADJ  │   │  ADJ  │ RSHFT │   ▲   │
                                 └───────┴───────┴───────┘   └───────┴───────┴───────┘  
