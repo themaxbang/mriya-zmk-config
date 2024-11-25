@@ -283,10 +283,10 @@
                 key-positions = <27 28>;
                 bindings = <&kp ESC>;
         };
-            combo_del {
+            combo_equal {
                 timeout-ms = <50>;
-                key-positions = <16 17>;
-                bindings = <&kp DEL>;
+                key-positions = <3 4>;
+                bindings = <&kp EQUAL>;
         };
             combo_lsqbracket {
                 timeout-ms = <50>;
@@ -365,7 +365,7 @@ label= "LOWER"                                  ;
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
 │ CTRL  │  F11  │  F3   │  F2   │  F1   │ MENU  │                   │   :   │   ?   │   *   │   (   │   )   │   &   │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│ LALT  │  F12  │  F6   │  F5   │  F4   │ LANG  │                   │   "   │   «   │   »   │   {   │   }   │   ^   │
+│ LALT  │  F12  │  F6   │  F5   │  F4   │ LANG  │                   │   \   │   «   │   »   │   {   │   }   │   ^   │
 └───────┴───────┴───────┴───────┼───────┼───────┼───────┐   ┌───────┼───────┼───────┼───────┴───────┴───────┴───────┘
                                 │  ADJ  │ LSHFT │   ▼   │   │   ▼   │ RSHFT │  ADJ  │
                                 └───────┴───────┴───────┘   └───────┴───────┴───────┘   
@@ -374,7 +374,7 @@ bindings = <
 
 &kp CAPS    &kp F10   &kp F9    &kp F8  	&kp F7    	      &kp GRAVE       &kp EXCL   &kp AT           &kp HASH       &kp DOLLAR   &kp PERCENT   &kp RGUI
 &kp LCTRL   &kp F11   &kp F3    &kp F2      &kp F1    	      &kp K_CMENU     &colon     &question        &kp STAR       &kp LPAR     &kp RPAR      &kp AMPS
-&kp LALT    &kp F12   &kp F6    &kp F5      &kp F4   	      &kp LG(SPACE)   &quote     &lguillement     &rguillement   &lbracket    &rbracket     &kp CARET
+&kp LALT    &kp F12   &kp F6    &kp F5      &kp F4   	      &kp LG(SPACE)   &kp BSLH   &lguillement     &rguillement   &lbracket    &rbracket     &kp CARET
 			                    &lt 3 TAB   &mt LSHFT SPACE   &trans   	      &trans     &mt RSHFT BSPC   &lt 3 DEL
             >;
         };
