@@ -1,0 +1,16 @@
+file_format: "1"
+id: mriya
+name: mriya
+type: shield
+url: https://github.com/themaxbang/MRIYA
+requires:
+- pro_micro
+exposes:
+- i2c_oleds
+features:
+- keys
+- display
+- studio
+siblings:
+- mriya_left
+- mriya_right
