@@ -16,14 +16,10 @@ include:
   # dongle
   - board: nice_nano_v2
     shield: mriya_central_dongle
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: mriya_dongle_nice_nano_v2
     # central_left
   - board: nice_nano_v2
     shield: mriya_central_left nice_view_adapter nice_view_gem
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: mriya_central_left
   # peripheral
   - board: nice_nano_v2
